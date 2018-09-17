@@ -1,0 +1,28 @@
+body {
+	font-family: 'Open Sans';
+
+}
+header, .search-bar, #nav-bar ul{
+	display: flex;
+}
+header {
+	flex-direction: column;
+}
+li{
+	list-style: none;
+}
+#header-img{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu1KRzYf61C2h0JdX-bzu5IMDx5_PmzhvEPdHsmY8Z7j0HMfZWJA') ;
+	background-color: rgb(242, 192, 32);
+	background-blend-mode: multiply;
+	background-size: contain;
+}
+.filmMenu li{
+	display: none;
+}
+.search-bar{
+
+}
