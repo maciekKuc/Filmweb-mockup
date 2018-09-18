@@ -3,7 +3,7 @@
 <head>
 	<title>To nie jest Filmweb.</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src='main.js'></script>
+	
 </head>
 <body>
  <header id='header'>
@@ -15,30 +15,39 @@
  		</form>
  	</div>    
     <nav id='nav-bar'>
-      <ul>
-      	<li>
+      <ul class="navs">
+      	<li class='flexCol'>
       		<p class="film">FILMY</p>
       		<div>
-      			<ul class='filmMenu'>
+      			<ul class='filmMenu flexCol'>
       				<li>Strona główna filmów</li>
       				<li>Premiery i zapowiedzi</li>
       				<li>Zwiastuny</li>
       			</ul>
       		</div>
       	</li>
-      	<li>
-      		<p>SERIALE</p>
+      	<li class='flexCol'>
+      		<p class='serial'>SERIALE</p>
       		<div>
-      			<ul class='showMenu'>
-      				<li></li>
+      			<ul class='showMenu flexCol'>
+      				<li>STRONA GŁÓWNA SERIALI</li>
+      				<li>PREMIERY I ZAPOWIEDZI</li>
+      				<li>BAZA SERIALI</li>
+      				<li>RANKING SERIALI</li>
+      				<li>BAZA PROGRAMÓW TV</li>
+      				<li>RANKING PROGRAMÓW TV</li>
       			</ul>
       		</div>
       	</li>
-      	<li>
-      		<p>GRY</p>
+      	<li class='flexCol'>
+      		<p class='gra'>GRY</p>
       		<div>
-      			<ul class='gameMenu'>
-      				<li></li>
+      			<ul class='gameMenu flexCol'>
+      				<li>STRONA GŁÓWNA GIER</li>
+      				<li>PREMIERY I ZAPOWIEDZI</li>
+      				<li>BAZA GIER</li>
+      				<li>RANKING GIER</li>
+      				<li>RECENZJE GIER</li>
       			</ul>
       		</div>
       	</li>
@@ -57,11 +66,6 @@
       	</li>
       	<li>
       		<p>MÓJ FILMWEB</p>
-      		<div>
-      			<ul class='customMenu'>
-      				<li></li>
-      			</ul>
-      		</div>
       	</li>
       </ul>
     </nav>
@@ -69,14 +73,19 @@
   </header>
   <main>
   	<div class='content'>
-  		<div class='main-content'></div>
-  		<div class='sidebar'></div>
+  		<div class='main-content'>
+  			
+  		</div>
+  		<div class='sidebar'>
+  			
+  		</div>
   	</div>
   	<div class='summary'></div>
   </main>
 <footer>
 	
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script type="text/javascript" src='main.js'></script>
 </body>
 </html>

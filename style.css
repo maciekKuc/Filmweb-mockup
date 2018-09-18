@@ -2,10 +2,10 @@ body {
 	font-family: 'Open Sans';
 
 }
-header, .search-bar, #nav-bar ul{
+header, .search-bar, #nav-bar ul, .flexCol {
 	display: flex;
 }
-header {
+header, .flexCol {
 	flex-direction: column;
 }
 li{
@@ -20,8 +20,11 @@ li{
 	background-blend-mode: multiply;
 	background-size: contain;
 }
-.filmMenu li{
+.flexCol li{
 	display: none;
+}
+.navs li {
+	padding: 5px;
 }
 .search-bar{
 
