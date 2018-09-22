@@ -1,11 +1,21 @@
 $(document).ready(() =>{
-	$('.film').on('click', () => {
-		$('.filmMenu li').fadeToggle();
+	$('.film').on('mouseenter', () => {
+		$('.filmMenu li').show();
 	});
-	$('.serial').on('click', () => {
-		$('.showMenu li').fadeToggle();
+	$('.filmMenu li').on('mouseleave', () => {
+		$('.filmMenu li').hide();
 	});
-	$('.gra').on('click', () => {
-		$('.gameMenu li').fadeToggle();
+	$('.serial').on('mouseenter', () => {
+		$('.showMenu li').show();
 	});
+	$('.showMenu li').on('mouseleave', () => {
+		$('.showMenu li').hide();
+	});
+	$('.gra').on('mouseenter', () => {
+		$('.gameMenu li').show();
+	});
+	$('.gameMenu li').on('mouseleave', () => {
+		$('.gameMenu li').hide();
+	});
+	
 });

@@ -11,6 +11,13 @@ header, .flexCol {
 li{
 	list-style: none;
 }
+#poster{
+	width: 200px;
+}
+.search-bar, main, nav{
+	width: 980px;
+	margin: 0 auto;
+}
 #header-img{
 	display: inline-block;
 	width: 100px;
@@ -22,9 +29,16 @@ li{
 }
 .flexCol li{
 	display: none;
+	background-color: rgb(233, 233, 233);
 }
 .navs li {
 	padding: 5px;
+}
+li p:hover{
+	color: rgb(219, 176, 21);
+}
+.flexCol li:hover {
+	color: rgb(219, 176, 21);
 }
 .search-bar{
 
