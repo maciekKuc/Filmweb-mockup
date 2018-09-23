@@ -2,8 +2,11 @@ body {
 	font-family: 'Open Sans';
 
 }
-header, .search-bar, #nav-bar ul, .flexCol {
+header, .search-bar, #nav-bar ul, .flexCol, .flexRow, .member {
 	display: flex;
+}
+.flexRow{
+	justify-content: space-between;
 }
 header, .flexCol {
 	flex-direction: column;
@@ -14,10 +17,21 @@ li{
 #poster{
 	width: 200px;
 }
-.search-bar, main, nav{
+#pictures img{
+	width: 120px;
+	
+}
+
+
+.search-bar, nav, main{
 	width: 980px;
 	margin: 0 auto;
 }
+.main-content{
+	width: 680px;
+	grid-area: content;
+}
+
 #header-img{
 	display: inline-block;
 	width: 100px;
@@ -52,4 +66,27 @@ footer{
 	background-image: url(https://2.fwcdn.pl/gf/iri-static/footer.jpg);
 	color: white;
 	text-align: center;
+}
+.content{
+	display: grid;
+	grid-template-areas: 'content sidebar';
+}
+.sidebar{
+	width: 300px;
+	grid-area: sidebar;
+	color: rgb(226, 226, 226);
+	
+}
+.rating{
+	background-color: rgb(19, 19, 19);
+}
+.sidebar p {
+	font-size: 12px;
+	color: rgb(226, 226, 226);
+}
+.stars{
+	background-color: rgb(65, 65, 65);
+}
+.member{
+
 }

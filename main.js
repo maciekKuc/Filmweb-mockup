@@ -31,7 +31,7 @@ $(document).ready(() =>{
 		let personelCont = document.getElementById('personelList');
 		personelCont.innerHTML='';
 		obj.forEach((actor) => {
-			personelCont.innerHTML += '<div class="memeber"><img src="' + actor.picture +'">' ;
+			personelCont.innerHTML += '<div class="member"><img src="' + actor.picture +'">' ;
 			personelCont.innerHTML += '<p>' + actor.name + '</p>';
 			personelCont.innerHTML += '<p>' + actor.role + '</p>';
 			personelCont.innerHTML += '<img src="' + actor.rolePic +'"></div>' ;
