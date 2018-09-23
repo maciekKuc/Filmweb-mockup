@@ -43,3 +43,13 @@ li p:hover{
 .search-bar{
 
 }
+.userTag img{
+	width: 50px;
+	border-radius: 50%;
+	border: solid 1px lightgray;
+}
+footer{
+	background-image: url(https://2.fwcdn.pl/gf/iri-static/footer.jpg);
+	color: white;
+	text-align: center;
+}
