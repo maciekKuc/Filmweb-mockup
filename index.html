@@ -11,7 +11,7 @@
  		<!--<img id='header-img' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu1KRzYf61C2h0JdX-bzu5IMDx5_PmzhvEPdHsmY8Z7j0HMfZWJA'>-->
  		<div id='header-img'></div>
  		<form>
- 			<input type="search" name="" placeholder='Szukaj filmów...'>
+ 			<input type="search" name="movieSearch" placeholder='Szukaj filmów, seriali, gier i ludzi kina'>
  		</form>
  	</div>    
     <nav id='nav-bar'>
@@ -74,13 +74,14 @@
   <main>
   	<div class='content'>
   		<div class='main-content'>
-  			<a href="https://ssl-gfx.filmweb.pl/po/05/41/620541/7504936.3.jpg"><img src='https://ssl-gfx.filmweb.pl/po/05/41/620541/7504936.3.jpg' id='poster'>
-  			<div id='showcase'></a>
+  			<div class='flexRow'>
+  			<a href="https://ssl-gfx.filmweb.pl/po/05/41/620541/7504936.3.jpg"><img src='https://ssl-gfx.filmweb.pl/po/05/41/620541/7504936.3.jpg' id='poster'></a>
+  			<div id='showcase'>
   				<h2>DJANGO</h2>
   				<h5>Django unchained</h5>
   				<h6>2 godz. 45 min.<button id='share'>Udostępnij</button></h6>
   				<p>Łowca nagród Schultz i czarnoskóry niewolnik Django wyruszają w podróż, aby odbić żonę tego drugiego z rąk bezlitosnego Calvina Candie'ego.</p>
-  				<button id='trailer'>Zobacz zwiastun</button>
+  				<button id='trailer' class='button-yellow'>Zobacz zwiastun</button>
   				<table>
   					<tr>
   						<td>reżyseria:</td>
@@ -111,8 +112,9 @@
   						<td></td>
   					</tr>
   				</table>
-
   			</div>
+  			</div>
+
   			<div class='flex article' id='zwiastuny'>
   				<h3>zwiastuny <span>zobacz wszytskie</span></h3>
   				<div>
@@ -149,13 +151,13 @@
   			</div>
   			<div class='flex article' id='obsada'>
   				<h3>obsada</h3>
-  				<span>pokaż:</span><button id='crew'>obsada aktorska</button>
-  				<button id='staff'>twórcy</button>
+  				<span>pokaż:</span><button id='crew' class='button-basic'>obsada aktorska</button>
+  				<button id='staff' class='button-basic'>twórcy</button>
   				<div id='personelList'>
   					
   				</div>
   			</div>
-  				<button >zobacz pełną obsadę</button>
+  				<button class='button-basic'>zobacz pełną obsadę</button>
   			<div class='article'>
   				<h3>ocena aktorów w filmie</h3>
   				<div>

@@ -5,7 +5,11 @@ body {
 header, .search-bar, #nav-bar ul, .flexCol, .flexRow, .member {
 	display: flex;
 }
-.flexRow{
+header{
+	background-color: black;
+	margin-bottom: 20px;
+}
+.flexRow, .member{
 	justify-content: space-between;
 }
 header, .flexCol {
@@ -18,8 +22,18 @@ li{
 	width: 200px;
 }
 #pictures img{
-	width: 120px;
+	width: 110px;
 	
+}
+.button-basic{
+	background-color: white ;
+	border: solid 1px black;
+	padding: 5px;
+}
+.button-basic:hover, .button-yellow{
+	background-color: rgb(248, 200, 23) ;
+	border: solid 1px rgb(248, 200, 23);
+	padding: 5px;
 }
 
 
@@ -48,15 +62,23 @@ li{
 .navs li {
 	padding: 5px;
 }
+li p {
+	color: white;
+}
 li p:hover{
 	color: rgb(219, 176, 21);
 }
 .flexCol li:hover {
 	color: rgb(219, 176, 21);
 }
-.search-bar{
-
+.search-bar {
+	
 }
+input[name=movieSearch]{
+	padding: 10px;
+	width: 450px;
+}
+
 .userTag img{
 	width: 50px;
 	border-radius: 50%;

@@ -31,14 +31,20 @@ $(document).ready(() =>{
 		let personelCont = document.getElementById('personelList');
 		personelCont.innerHTML='';
 		obj.forEach((actor) => {
-			personelCont.innerHTML += '<div class="member"><img src="' + actor.picture +'">' ;
-			personelCont.innerHTML += '<p>' + actor.name + '</p>';
-			personelCont.innerHTML += '<p>' + actor.role + '</p>';
-			personelCont.innerHTML += '<img src="' + actor.rolePic +'"></div>' ;
+			personelCont.innerHTML += `<div class="member"><img src="${actor.picture}"><p>${actor.name}</p><p>${actor.role}</p><img src="${actor.rolePic}"></div>`;
 		});
 	};
 	setCast(personel.actors);
-
+	$('#staff').on('click', (event) =>{
+		setCast(personel.staff);
+		$(event.currentTarget).addClass('button-yellow');
+		$('#crew').removeClass('button-yellow');
+	});
+	$('#crew').on('click', () =>{
+		setCast(personel.actors);
+		$(event.currentTarget).addClass('button-yellow');
+		$('#staff').removeClass('button-yellow');
+	});
 	$('.film').on('mouseenter', () => {
 		$('.filmMenu li').show();
 	});
