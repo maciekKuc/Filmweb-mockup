@@ -35,7 +35,9 @@ li{
 	border: solid 1px rgb(248, 200, 23);
 	padding: 5px;
 }
-
+button{
+	margin: 10px 0;
+}
 
 .search-bar, nav, main{
 	width: 980px;
@@ -45,14 +47,17 @@ li{
 	width: 680px;
 	grid-area: content;
 }
+.userTag img, .userTag div{
+	display: inline-block;
+	margin: 0 15px;
+}
 
 #header-img{
 	display: inline-block;
-	width: 100px;
-	height: 100px;
-	background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu1KRzYf61C2h0JdX-bzu5IMDx5_PmzhvEPdHsmY8Z7j0HMfZWJA') ;
-	background-color: rgb(242, 192, 32);
-	background-blend-mode: multiply;
+	width: 145px;
+	height: 35px;
+	background: url('https://2.fwcdn.pl/gf/iri-static/logo.310.png');
+
 	background-size: contain;
 }
 .flexCol li{
@@ -73,6 +78,11 @@ li p:hover{
 }
 .search-bar {
 	
+}
+.flexCol div {
+	position: absolute;
+	top:10px;
+
 }
 input[name=movieSearch]{
 	padding: 10px;
@@ -110,5 +120,11 @@ footer{
 	background-color: rgb(65, 65, 65);
 }
 .member{
+	margin: 10px 0;
+	border-bottom: 1px solid rgb(228, 228, 228);
+	padding-bottom: 10px;
+}
+#personelList:last-child{
+	border-bottom: 0px;
 
 }
