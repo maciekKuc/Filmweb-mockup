@@ -69,11 +69,10 @@ button{
 }
 li p {
 	color: white;
+	padding: 10px;
 }
-li p:hover{
-	color: rgb(219, 176, 21);
-}
-.flexCol li:hover {
+
+.flexCol li:hover, li p:hover{
 	color: rgb(219, 176, 21);
 }
 .search-bar {
@@ -83,6 +82,9 @@ li p:hover{
 	position: absolute;
 	top:10px;
 
+}
+.bottom-underline{
+	border-bottom: solid 3px rgb(219, 176, 21);
 }
 input[name=movieSearch]{
 	padding: 10px;

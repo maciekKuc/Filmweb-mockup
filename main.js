@@ -97,25 +97,31 @@ $(document).ready(() =>{
 	});
 
 	let rateActors = document.getElementById('leadRoles');
-	ratings.createPanel(rateActors);
+	//ratings.createPanel(rateActors);
 
 	$('.film').on('mouseenter', () => {
 		$('.filmMenu li').show();
+		$('.film').addClass('bottom-underline');
 	});
 	$('.flexCol').on('mouseleave', () => {
 		$('.filmMenu li').hide();
+		$('.film').removeClass('bottom-underline');
 	});
 	$('.serial').on('mouseenter', () => {
 		$('.showMenu li').show();
+		$('.serial').addClass('bottom-underline');
 	});
 	$('.flexCol').on('mouseleave', () => {
 		$('.showMenu li').hide();
+		$('.serial').removeClass('bottom-underline');
 	});
 	$('.gra').on('mouseenter', () => {
 		$('.gameMenu li').show();
+		$('.gra').addClass('bottom-underline');
 	});
 	$('.flexCol').on('mouseleave', () => {
 		$('.gameMenu li').hide();
+		$('.gra').removeClass('bottom-underline');	
 	});
 	
 });
