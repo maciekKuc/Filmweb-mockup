@@ -66,15 +66,16 @@ $(document).ready(() =>{
 		moveLeft: () => {
 
 		},
-		createPanel: (obj) => {
-			let html = '';
-			this.actory.forEach((actor) => {
+		createPanel: () => {
+			let html = `<div id='leftArrow'></div>`;
+			ratings.actory.forEach((actor) => {
 				html += `<div>
-							<div style='bacground:url('${actor.pic}; width: 185px; height:185px')'><p>${actor.name}</p></div>
+							<div style="background-image:url(${actor.pic}); width: 185px; height:185px"><p>${actor.name}</p></div>
 							<div><p>${actor.rating}<span>${actor.votes} głosów</span></p></div>
 						</div>`;
 			});
-			obj.appendChild(html);
+			html += `<div id='rigthArrow'></div>`;
+			return html;
 		}
 	}
 	let setCast = (obj) =>{
@@ -97,6 +98,9 @@ $(document).ready(() =>{
 	});
 
 	let rateActors = document.getElementById('leadRoles');
+	let  panel = ratings.createPanel();
+	console.log(panel);
+	rateActors.innerHTML = panel;
 	//ratings.createPanel(rateActors);
 
 	$('.film').on('mouseenter', () => {
