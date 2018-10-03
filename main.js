@@ -67,14 +67,14 @@ $(document).ready(() =>{
 
 		},
 		createPanel: () => {
-			let html = `<div id='leftArrow'></div>`;
+			let html = `<button id='leftArrow'><</button>`;
 			ratings.actory.forEach((actor) => {
 				html += `<div>
 							<div style="background-image:url(${actor.pic}); width: 185px; height:185px"><p>${actor.name}</p></div>
 							<div><p>${actor.rating}<span>${actor.votes} głosów</span></p></div>
 						</div>`;
 			});
-			html += `<div id='rigthArrow'></div>`;
+			html += `<button id='rightArrow'>></button>`;
 			return html;
 		}
 	}
@@ -82,7 +82,7 @@ $(document).ready(() =>{
 		let personelCont = document.getElementById('personelList');
 		personelCont.innerHTML='';
 		obj.forEach((actor) => {
-			personelCont.innerHTML += `<div class="member"><img src="${actor.picture}"><p>${actor.name}</p><p>${actor.role}</p><img src="${actor.rolePic}"></div>`;
+			personelCont.innerHTML += `<div class="member"><img src="${actor.picture}" alt="${actor.name}"><p>${actor.name}</p><p>${actor.role}</p><img src="${actor.rolePic}"></div>`;
 		});
 	};
 	setCast(personel.actors);

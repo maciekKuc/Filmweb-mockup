@@ -8,9 +8,13 @@ header, .search-bar, #nav-bar ul, .flexCol, .flexRow, .member {
 header{
 	background-color: black;
 	margin-bottom: 20px;
+	height: 250px;
 }
 .flexRow, .member{
 	justify-content: space-between;
+}
+footer .flexRow{
+	justify-content: center;
 }
 header, .flexCol {
 	flex-direction: column;
@@ -25,6 +29,7 @@ li{
 	width: 110px;
 	
 }
+
 .button-basic{
 	background-color: white ;
 	border: solid 1px black;
@@ -41,7 +46,7 @@ button{
 
 .search-bar, nav, main{
 	width: 980px;
-	margin: 0 auto;
+	margin: 10px auto;
 }
 .main-content{
 	width: 680px;
@@ -52,13 +57,18 @@ button{
 	margin: 0 15px;
 }
 
-#header-img{
+#header-img, #footer-img {
 	display: inline-block;
+	background: url('https://2.fwcdn.pl/gf/iri-static/logo.310.png');
+	background-size: contain;
+}
+#header-img{
 	width: 145px;
 	height: 35px;
-	background: url('https://2.fwcdn.pl/gf/iri-static/logo.310.png');
-
-	background-size: contain;
+}
+#footer-img {
+	width: 320px;
+	height: 78px;
 }
 .flexCol li{
 	display: none;
@@ -76,7 +86,7 @@ li p {
 	color: rgb(219, 176, 21);
 }
 .search-bar {
-	
+	margin-top: 150px;
 }
 .flexCol div {
 	position: absolute;
@@ -89,6 +99,7 @@ li p {
 input[name=movieSearch]{
 	padding: 10px;
 	width: 450px;
+	margin-left: 10px; 
 }
 
 .userTag img{
@@ -100,6 +111,10 @@ footer{
 	background-image: url(https://2.fwcdn.pl/gf/iri-static/footer.jpg);
 	color: white;
 	text-align: center;
+	height: 405px;
+}
+footer img{
+	height: 50px;
 }
 .content{
 	display: grid;
@@ -129,4 +144,11 @@ footer{
 #personelList:last-child{
 	border-bottom: 0px;
 
+}
+#leftArrow, #rightArrow{
+	border: none;
+	background-color: white;
+	font-size: 30px;
+	font-weight: 900;
+	font-family: 'Open Sans';
 }
