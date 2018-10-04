@@ -69,9 +69,9 @@ $(document).ready(() =>{
 		createPanel: () => {
 			let html = `<button id='leftArrow'><</button>`;
 			ratings.actory.forEach((actor) => {
-				html += `<div>
-							<div style="background-image:url(${actor.pic}); width: 185px; height:185px"><p>${actor.name}</p></div>
-							<div><p>${actor.rating}<span>${actor.votes} głosów</span></p></div>
+				html += `<div style='margin: 0 10px'>
+							<div style="background-image:url(${actor.pic});background-size: cover; width: 185px; height:185px; color: white"><p>${actor.name}</p></div>
+							<div><p style='font-size:18px'>${actor.rating}  <span style='font-size:13px'>${actor.votes} głosów</span></p></div>
 						</div>`;
 			});
 			html += `<button id='rightArrow'>></button>`;
@@ -104,27 +104,27 @@ $(document).ready(() =>{
 	//ratings.createPanel(rateActors);
 
 	$('.film').on('mouseenter', () => {
-		$('.filmMenu li').show();
+		$('#filmMenu li').show();
 		$('.film').addClass('bottom-underline');
 	});
 	$('.flexCol').on('mouseleave', () => {
-		$('.filmMenu li').hide();
+		$('#filmMenu li').hide();
 		$('.film').removeClass('bottom-underline');
 	});
 	$('.serial').on('mouseenter', () => {
-		$('.showMenu li').show();
+		$('#showMenu li').show();
 		$('.serial').addClass('bottom-underline');
 	});
 	$('.flexCol').on('mouseleave', () => {
-		$('.showMenu li').hide();
+		$('#showMenu li').hide();
 		$('.serial').removeClass('bottom-underline');
 	});
 	$('.gra').on('mouseenter', () => {
-		$('.gameMenu li').show();
+		$('#gameMenu li').show();
 		$('.gra').addClass('bottom-underline');
 	});
 	$('.flexCol').on('mouseleave', () => {
-		$('.gameMenu li').hide();
+		$('#gameMenu li').hide();
 		$('.gra').removeClass('bottom-underline');	
 	});
 	

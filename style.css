@@ -1,5 +1,6 @@
 body {
 	font-family: 'Open Sans';
+	margin: 0;
 
 }
 header, .search-bar, #nav-bar ul, .flexCol, .flexRow, .member {
@@ -8,7 +9,7 @@ header, .search-bar, #nav-bar ul, .flexCol, .flexRow, .member {
 header{
 	background-color: black;
 	margin-bottom: 20px;
-	height: 250px;
+	height: 135px;
 }
 .flexRow, .member{
 	justify-content: space-between;
@@ -77,6 +78,9 @@ button{
 .navs li {
 	padding: 5px;
 }
+#filmMenu li, #showMenu li, #gameMenu li{
+	padding: 10px 20px;
+}
 li p {
 	color: white;
 	padding: 10px;
@@ -86,13 +90,15 @@ li p {
 	color: rgb(219, 176, 21);
 }
 .search-bar {
-	margin-top: 150px;
+	margin-top: 35px;
 }
 .flexCol div {
 	position: absolute;
-	top:10px;
-
+	top:135px;
+	font-weight: 500;
+	font-size: 14px;
 }
+
 .bottom-underline{
 	border-bottom: solid 3px rgb(219, 176, 21);
 }
@@ -101,7 +107,6 @@ input[name=movieSearch]{
 	width: 450px;
 	margin-left: 10px; 
 }
-
 .userTag img{
 	width: 50px;
 	border-radius: 50%;
@@ -126,6 +131,7 @@ footer img{
 	color: rgb(226, 226, 226);
 	
 }
+
 .rating{
 	background-color: rgb(19, 19, 19);
 }
