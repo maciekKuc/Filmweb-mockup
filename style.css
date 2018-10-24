@@ -41,6 +41,12 @@ li{
 	border: solid 1px rgb(248, 200, 23);
 	padding: 5px;
 }
+.button-full{
+	width: 320px;
+	display: block;
+	margin: 0 auto;
+}
+
 button{
 	margin: 10px 0;
 }
@@ -126,6 +132,12 @@ footer img{
 	display: grid;
 	grid-template-areas: 'content sidebar';
 }
+.picsContainer{
+	display: grid;
+	grid-template-columns: repeat(6, 110px);
+}
+
+
 .sidebar{
 	width: 300px;
 	grid-area: sidebar;
