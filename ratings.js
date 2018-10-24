@@ -1,4 +1,5 @@
-let ratings = {
+
+export let ratings = {
 		star: '',
 		actory: [{
 			name: 'Christoph Waltz',
@@ -50,4 +51,3 @@ let ratings = {
 		}
 	}
 
-	export {ratings};

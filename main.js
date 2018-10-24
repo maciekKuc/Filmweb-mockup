@@ -1,5 +1,5 @@
-import personel from './personel.js';
-import ratings from './ratings.js';
+import  personel from 'personel.js';
+import ratings from 'ratings.js';
 
 $(document).ready(() =>{
 
