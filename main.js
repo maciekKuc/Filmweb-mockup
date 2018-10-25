@@ -1,4 +1,4 @@
-import  personel from 'personel.js';
+import personel from 'personel.js';
 import ratings from 'ratings.js';
 
 $(document).ready(() =>{
@@ -29,29 +29,29 @@ $(document).ready(() =>{
 	rateActors.innerHTML = panel;
 	//ratings.createPanel(rateActors);
 
-	$('.film').on('mouseenter', () => {
-		$('#filmMenu li').show();
-		$('.film').addClass('bottom-underline');
+	$('.movie').on('mouseenter', () => {
+		$('#movieMenu li').show();
+		$('.movie').addClass('bottom-underline');
 	});
 	$('.flexCol').on('mouseleave', () => {
-		$('#filmMenu li').hide();
-		$('.film').removeClass('bottom-underline');
+		$('#movieMenu li').hide();
+		$('.movie').removeClass('bottom-underline');
 	});
-	$('.serial').on('mouseenter', () => {
+	$('.show').on('mouseenter', () => {
 		$('#showMenu li').show();
-		$('.serial').addClass('bottom-underline');
+		$('.show').addClass('bottom-underline');
 	});
 	$('.flexCol').on('mouseleave', () => {
 		$('#showMenu li').hide();
-		$('.serial').removeClass('bottom-underline');
+		$('.show').removeClass('bottom-underline');
 	});
-	$('.gra').on('mouseenter', () => {
+	$('.game').on('mouseenter', () => {
 		$('#gameMenu li').show();
-		$('.gra').addClass('bottom-underline');
+		$('.game').addClass('bottom-underline');
 	});
 	$('.flexCol').on('mouseleave', () => {
 		$('#gameMenu li').hide();
-		$('.gra').removeClass('bottom-underline');	
+		$('.game').removeClass('bottom-underline');	
 	});
 	
 });
