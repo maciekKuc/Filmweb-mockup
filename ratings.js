@@ -1,5 +1,5 @@
 
-export let ratings= {
+ let ratings= {
 		star: '',
 		actory: [{
 			name: 'Christoph Waltz',

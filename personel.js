@@ -1,4 +1,4 @@
-export let personel = {
+let personel = {
 		actors: [{
 			picture: 'https://1.fwcdn.pl/p/58/59/5859/394261.2.jpg',
 			name: 'Jamie Foxx',
