@@ -152,8 +152,9 @@ footer img{
 	font-size: 12px;
 	color: rgb(226, 226, 226);
 }
-.stars{
+.starsCont{
 	background-color: rgb(65, 65, 65);
+	flex-direction: column;
 }
 .member{
 	margin: 10px 0;
@@ -174,3 +175,36 @@ footer img{
 footer div:nth-last-child(1){
 	margin: 40px auto 0 auto;
 }
+.stars{
+	height: 30px;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row-reverse;
+}
+.stars input{
+	position: absolute;
+	left: -99999px;
+}
+.stars label{
+	width: 30px;
+	height: 30px;
+	padding: 5px;	
+}
+label::before{
+	content:'☆';
+	font-size: 30px;
+	line-height: 30px;
+	margin-right: -100%;
+}
+label:hover::before, 
+label:hover ~ label::before,
+.stars input:checked ~ label::before
+{
+	content:'★';
+	font-size: 30px;
+	line-height: 30px;
+	color:rgb(219, 176, 21);
+}
+
