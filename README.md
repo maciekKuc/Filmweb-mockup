@@ -2,7 +2,7 @@
 
 Unfinished project of Filmweb's page mockup, made for the Django Unchained movie.
 
-Technologies used"
+Technologies used:
 
 * HTML 5
 
